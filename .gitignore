@@ -1,0 +1,23 @@
+# Django project files
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+
+# Django media files
+media/
+
+# Django static files
+staticfiles/
+
+# Django test and coverage files
+.coverage
+htmlcov/
+
+# Django translations
+*.mo
+
+# Django administration
+/admin/

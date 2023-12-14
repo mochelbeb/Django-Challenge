@@ -1,0 +1,10 @@
+{% extends 'receipts/base.html' %}
+
+{% block content %}
+  <h2>Receipt: {{ receipt.store_name }}</h2>
+  <p>Date of Purchase: {{ receipt.date_of_purchase }}</p>
+  <p>Items:</p>
+  <pre>{{ receipt.item_list }}</pre>
+  <p>Total Amount: {{ receipt.total_amount }}DZD</p>
+  <a href="{% url 'receipt-edit' pk=receipt.pk %}">Edit</a>
+{% endblock %}
