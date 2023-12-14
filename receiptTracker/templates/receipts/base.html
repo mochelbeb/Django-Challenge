@@ -93,6 +93,7 @@
             <nav>
                 <ul>
                     <li><a href="{% url 'receipt-list' %}">Home</a></li>
+                    <li><a href="{% url 'receipt-new' %}">New</a></li>
                     {% if user.is_authenticated %}
                     <form action="{% url 'logout' %}" method="post" style="display: inline;">
                         {% csrf_token %}

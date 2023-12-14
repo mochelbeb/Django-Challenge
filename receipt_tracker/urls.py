@@ -30,9 +30,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('register/', views.user_registration, name='register'),
     path('login/', auth_views.LoginView.as_view(template_name='login.html'), name='login'),
-    path('confirm_logout/', views.confirm_logout_view, name='confirm_logout'),
     path('logout/', auth_views.LogoutView.as_view(), name='logout'),
-    path('profile/', views.profile_view, name='profile'),
     # logic system
     path('receipts/', ReceiptListView.as_view(), name='receipt-list'),
     path('receipts/<int:pk>/', ReceiptDetailView.as_view(), name='receipt-detail'),
