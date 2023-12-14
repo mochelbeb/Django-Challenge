@@ -55,7 +55,9 @@ For example:
 
 ## Usage
 
-first, you need to 
+First, you need to create a new user in '/register' than you will be redirected to home page when you can see your receipts list 
+than you can create new receipt , edit an existing one and logout
+
 ## Running the App
 
 Describe how to run your Django app locally. Include any custom commands or settings.
